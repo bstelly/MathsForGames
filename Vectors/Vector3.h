@@ -1,7 +1,9 @@
 #pragma once
+#include <math.h>
 
 class Vector3
 {
+public:
 	float mX;
 	float mY;
 	float mZ;
@@ -11,4 +13,9 @@ class Vector3
 	Vector3 operator + (Vector3 & other);
 	Vector3 operator - (Vector3 & other);
 	Vector3 operator * (float other);
+	bool operator == (Vector3 & other);
+	float Dot(Vector3 & other);
+	Vector3 Cross(Vector3 & other);
+	Vector3 Normalize();
+	float Magnitude();
 };
