@@ -61,3 +61,23 @@ float Vector4::Dot(Vector4 & other)
 	return dot;
 }
 
+Vector4 Vector4::Normalize()
+{
+	Vector4 temp;
+	temp.mX = mX / Magnitude();
+	temp.mY = mY / Magnitude();
+	temp.mZ = mZ / Magnitude();
+	temp.mW = mW / Magnitude();
+	return temp;
+}
+
+float Vector4::Magnitude()
+{
+	float xSquared = mX * mX;
+	float ySquared = mY * mY;
+	float zSquared = mZ * mZ;
+	float wSquared = mW * mW;
+	float sum = xSquared + ySquared + zSquared + wSquared;
+	float magnitude = sqrt(sum);
+	return magnitude;
+}

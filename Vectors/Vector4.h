@@ -1,4 +1,5 @@
 #pragma once
+#include <math.h>
 
 class Vector4
 {
@@ -15,5 +16,6 @@ public:
 	Vector4 operator * (float other);
 	bool operator == (Vector4 & other);
 	float Dot(Vector4 & other);
-
+	Vector4 Normalize();
+	float Magnitude();
 };
