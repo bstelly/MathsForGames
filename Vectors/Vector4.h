@@ -1,5 +1,7 @@
 #pragma once
 #include <math.h>
+#include <iostream>
+using namespace std;
 
 class Vector4
 {
@@ -18,4 +20,6 @@ public:
 	float Dot(Vector4 & other);
 	Vector4 Normalize();
 	float Magnitude();
+	friend ostream& operator<<(ostream& os, const Vector4& vector);
 };
+

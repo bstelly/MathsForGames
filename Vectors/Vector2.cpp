@@ -1,4 +1,5 @@
 #include "Vector2.h"
+using namespace std;
 
 Vector2::Vector2()
 {
@@ -66,4 +67,10 @@ Vector2 Vector2::Normalize()
 	temp.mX = mX / Magnitude();
 	temp.mY = mY / Magnitude();
 	return temp;
+}
+
+ostream & operator<<(ostream & os, const Vector2 & vector)
+{
+	os << "<" << vector.mX << ", " << vector.mY << ">";
+	return os;
 }

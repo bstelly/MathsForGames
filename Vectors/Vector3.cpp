@@ -83,3 +83,9 @@ Vector3 Vector3::Normalize()
 	temp.mZ = mZ / Magnitude();
 	return temp;
 }
+
+ostream & operator<<(ostream & os, const Vector3 & vector)
+{
+	os << "<" << vector.mX << ", " << vector.mY << ', ' << vector.mZ << ">";
+	return os;
+}

@@ -81,3 +81,9 @@ float Vector4::Magnitude()
 	float magnitude = sqrt(sum);
 	return magnitude;
 }
+
+ostream & operator<<(ostream & os, const Vector4 & vec)
+{
+	os << "<" << vec.mX << ", " << vec.mY << ', ' << vec.mZ << ', ' << vec.mW << ">";
+	return os;
+}
