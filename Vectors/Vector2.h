@@ -19,4 +19,5 @@ public:
 	Vector2 Normalize();
 	float Magnitude();
 	friend ostream& operator<<(ostream& os, const Vector2& vector);
+	friend istream & operator >> (istream &in, Vector2 vector);
 };

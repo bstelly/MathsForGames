@@ -84,6 +84,12 @@ float Vector4::Magnitude()
 
 ostream & operator<<(ostream & os, const Vector4 & vec)
 {
-	os << "<" << vec.mX << ", " << vec.mY << ', ' << vec.mZ << ', ' << vec.mW << ">";
+	os << "<" << vec.mX << ", " << vec.mY << ", " << vec.mZ << ", " << vec.mW << ">";
 	return os;
+}
+
+istream & operator >> (istream &in, Vector4 vector)
+{
+	in >> vector.mX >> vector.mY >> vector.mZ >> vector.mW;
+	return in;
 }

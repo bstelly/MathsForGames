@@ -21,5 +21,7 @@ public:
 	Vector4 Normalize();
 	float Magnitude();
 	friend ostream& operator<<(ostream& os, const Vector4& vector);
+	friend istream & operator >> (istream &in, Vector4 vector);
+
 };
 

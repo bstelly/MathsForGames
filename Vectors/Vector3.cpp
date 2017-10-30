@@ -86,6 +86,12 @@ Vector3 Vector3::Normalize()
 
 ostream & operator<<(ostream & os, const Vector3 & vector)
 {
-	os << "<" << vector.mX << ", " << vector.mY << ', ' << vector.mZ << ">";
+	os << "<" << vector.mX << ", " << vector.mY << ", " << vector.mZ << ">";
 	return os;
+}
+
+istream & operator >> (istream &in, Vector3 vector)
+{
+	in >> vector.mX >> vector.mY >> vector.mZ;
+	return in;
 }

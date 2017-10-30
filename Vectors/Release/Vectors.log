@@ -1,0 +1,13 @@
+﻿  ClassPractice.cpp
+  Source.cpp
+  Vector2.cpp
+  Vector3.cpp
+  Vector4.cpp
+  Generating code
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\vectors\vector4.cpp(55): warning C4715: 'Vector4::operator==': not all control paths return a value
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\vectors\vector3.cpp(50): warning C4715: 'Vector3::operator==': not all control paths return a value
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\vectors\vector2.cpp(46): warning C4715: 'Vector2::operator==': not all control paths return a value
+  All 33 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Vectors.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Release\Vectors.exe
+  Vectors.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Release\Vectors.pdb (Full PDB)

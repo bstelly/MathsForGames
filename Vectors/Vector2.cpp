@@ -74,3 +74,9 @@ ostream & operator<<(ostream & os, const Vector2 & vector)
 	os << "<" << vector.mX << ", " << vector.mY << ">";
 	return os;
 }
+
+istream & operator >> (istream &in, Vector2 vector)
+{
+	in >> vector.mX >> vector.mY;
+	return in;
+}

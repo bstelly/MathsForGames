@@ -87,8 +87,8 @@ int main()
 	float resultFifteen = 70;
 	assert(resultFifteen == vector4One.Dot(vector4Two));
 	
-	std::cout << vector3Three << std::endl;
-
-
+	std::cout << vector4Three << std::endl;
+	std::cin >> vector4Three;
+	vector4Three;
 	system("pause");
 }
