@@ -118,6 +118,7 @@
     <ClCompile Include="..\Vectors\Matrix2.cpp" />
     <ClCompile Include="..\Vectors\Matrix3.cpp" />
     <ClCompile Include="..\Vectors\Matrix4.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

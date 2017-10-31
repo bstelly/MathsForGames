@@ -56,7 +56,7 @@ istream& operator >> (istream& in, Matrix2 matrix)
 
 ostream& operator << (ostream &os, Matrix2 &matrix)
 {
-	os << matrix.mMat[0]<< ", " << matrix.mMat[1]<< ", " << matrix.mMat[2] << ", "
-	<< matrix.mMat[3];
+	os << matrix.mMat[0] << " " << matrix.mMat[1] << std::endl
+	<< matrix.mMat[2] << " " << matrix.mMat[3] << std::endl;
 	return os;
 }
