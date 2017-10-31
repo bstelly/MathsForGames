@@ -19,8 +19,8 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{9762826A-EE38-4FF8-BD97-65F1BF36AAB8}</ProjectGuid>
-    <RootNamespace>Vectors</RootNamespace>
+    <ProjectGuid>{5991D83B-66E5-46E4-8D92-53FC3F1693ED}</ProjectGuid>
+    <RootNamespace>Matrices</RootNamespace>
     <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -110,16 +110,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="ClassPractice.cpp" />
-    <ClCompile Include="Source.cpp" />
-    <ClCompile Include="Vector2.cpp" />
-    <ClCompile Include="Vector3.cpp" />
-    <ClCompile Include="Vector4.cpp" />
+    <ClInclude Include="..\Vectors\Matrix2.h" />
+    <ClInclude Include="..\Vectors\Matrix3.h" />
+    <ClInclude Include="..\Vectors\Matrix4.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Vector2.h" />
-    <ClInclude Include="Vector3.h" />
-    <ClInclude Include="Vector4.h" />
+    <ClCompile Include="..\Vectors\Matrix2.cpp" />
+    <ClCompile Include="..\Vectors\Matrix3.cpp" />
+    <ClCompile Include="..\Vectors\Matrix4.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -83,22 +83,7 @@ Matrix4 Matrix4::operator - (Matrix4 & other)
 Matrix4 Matrix4::operator* (Matrix4 & other)
 {
 	Matrix4 temp;
-	temp.mMat[0] = mMat[0] * other.mMat[0];
-	temp.mMat[1] = mMat[1] * other.mMat[1];
-	temp.mMat[2] = mMat[2] * other.mMat[2];
-	temp.mMat[3] = mMat[3] * other.mMat[3];
-	temp.mMat[4] = mMat[4] * other.mMat[4];
-	temp.mMat[5] = mMat[5] * other.mMat[5];
-	temp.mMat[6] = mMat[6] * other.mMat[6];
-	temp.mMat[7] = mMat[7] * other.mMat[7];
-	temp.mMat[8] = mMat[8] * other.mMat[8];
-	temp.mMat[9] = mMat[9] * other.mMat[9];
-	temp.mMat[10] = mMat[10] * other.mMat[10];
-	temp.mMat[11] = mMat[11] * other.mMat[11];
-	temp.mMat[12] = mMat[12] * other.mMat[12];
-	temp.mMat[13] = mMat[13] * other.mMat[13];
-	temp.mMat[14] = mMat[14] * other.mMat[14];
-	temp.mMat[15] = mMat[15] * other.mMat[15];
+
 	return temp;
 }
 

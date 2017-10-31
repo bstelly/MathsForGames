@@ -61,15 +61,7 @@ Matrix3 Matrix3::operator - (Matrix3 & other)
 Matrix3 Matrix3::operator* (Matrix3 & other)
 {
 	Matrix3 temp;
-	temp.mMat[0] = mMat[0] * other.mMat[0];
-	temp.mMat[1] = mMat[1] * other.mMat[1];
-	temp.mMat[2] = mMat[2] * other.mMat[2];
-	temp.mMat[3] = mMat[3] * other.mMat[3];
-	temp.mMat[4] = mMat[4] * other.mMat[4];
-	temp.mMat[5] = mMat[5] * other.mMat[5];
-	temp.mMat[6] = mMat[6] * other.mMat[6];
-	temp.mMat[7] = mMat[7] * other.mMat[7];
-	temp.mMat[8] = mMat[8] * other.mMat[8];
+
 	return temp;
 }
 
