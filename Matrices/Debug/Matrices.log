@@ -1,15 +1,5 @@
-﻿  Source.cpp
-c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.h(7): warning C4200: nonstandard extension used: zero-sized array in struct/union
-  c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.h(7): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
-  Matrix4.cpp
-c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.h(8): warning C4200: nonstandard extension used: zero-sized array in struct/union
-  c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.h(8): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
-  Matrix3.cpp
+﻿  Matrix3.cpp
 c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix3.h(8): warning C4200: nonstandard extension used: zero-sized array in struct/union
   c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix3.h(8): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
-  Matrix2.cpp
-c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.h(7): warning C4200: nonstandard extension used: zero-sized array in struct/union
-  c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.h(7): note: This member will be ignored by a defaulted constructor or copy/move assignment operator
-  Generating Code...
   Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.exe
   Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.pdb (Partial PDB)

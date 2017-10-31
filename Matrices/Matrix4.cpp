@@ -98,8 +98,11 @@ istream& operator >> (istream& in, Matrix4 matrix)
 
 ostream& operator << (ostream &os, Matrix4 &matrix)
 {
-	os << matrix.mMat[0] << ", " << matrix.mMat[1] << ", " << matrix.mMat[2] << ", "
-		<< matrix.mMat[3] << ", " << matrix.mMat[4] << ", " << matrix.mMat[5] << ", "
-		<< matrix.mMat[6] << ", " << matrix.mMat[7] << ", " << matrix.mMat[8];
+	os << matrix.mMat[0] << " " << matrix.mMat[1] << " " << matrix.mMat[2] << " " <<
+		matrix.mMat[3] << std::endl << matrix.mMat[4] << " " << matrix.mMat[5] << " " <<
+		matrix.mMat[6] << " " << matrix.mMat[7] << std::endl << matrix.mMat[8] << " " <<
+		matrix.mMat[9] << " " << matrix.mMat[10] << " " << matrix.mMat[11] << std::endl <<
+		matrix.mMat[12] << " " << matrix.mMat[13] << " " << matrix.mMat[14] << " " <<
+		matrix.mMat[15] << std::endl;
 	return os;
-} // add more indexes
+}
