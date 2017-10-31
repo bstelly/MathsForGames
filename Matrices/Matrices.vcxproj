@@ -110,15 +110,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="..\Vectors\Matrix2.h" />
-    <ClInclude Include="..\Vectors\Matrix3.h" />
-    <ClInclude Include="..\Vectors\Matrix4.h" />
+    <ClCompile Include="Matrix2.cpp" />
+    <ClCompile Include="Matrix3.cpp" />
+    <ClCompile Include="Matrix4.cpp" />
+    <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\Vectors\Matrix2.cpp" />
-    <ClCompile Include="..\Vectors\Matrix3.cpp" />
-    <ClCompile Include="..\Vectors\Matrix4.cpp" />
-    <ClCompile Include="Source.cpp" />
+    <ClInclude Include="Matrix2.h" />
+    <ClInclude Include="Matrix3.h" />
+    <ClInclude Include="Matrix4.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

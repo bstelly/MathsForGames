@@ -14,7 +14,7 @@ Matrix3::Matrix3(float mat[])
 }
 
 Matrix3::Matrix3(float indexA, float indexB, float indexC, float indexD, float indexE,
-		float indexF, float indexG, float indexH, float indexI)
+	float indexF, float indexG, float indexH, float indexI)
 {
 	mMat[0] = indexA;
 	mMat[1] = indexB;
