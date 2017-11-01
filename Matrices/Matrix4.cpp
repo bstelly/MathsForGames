@@ -1,4 +1,6 @@
 #include "Matrix4.h"
+#include <math.h>
+using namespace std;
 
 Matrix4::Matrix4()
 {
@@ -78,12 +80,43 @@ Matrix4 Matrix4::operator - (Matrix4 & other)
 	temp.mMat[14] = mMat[14] - other.mMat[14];
 	temp.mMat[15] = mMat[15] - other.mMat[15];
 	return temp;
-}
-
-Matrix4 Matrix4::operator* (Matrix4 & other)
-{
+}								
+														
+Matrix4 Matrix4::operator* (Matrix4 & other)			
+{										
 	Matrix4 temp;
-
+	temp.mMat[0] = (mMat[0] * other.mMat[0]) + (mMat[1] * other.mMat[4]) + 
+		(mMat[2] * other.mMat[8]) + (mMat[3] * other.mMat[12]);
+	temp.mMat[1] = (mMat[0] * other.mMat[1]) + (mMat[1] * other.mMat[5]) + 
+		(mMat[2] * other.mMat[9]) + (mMat[3] * other.mMat[13]);
+	temp.mMat[2] = (mMat[0] * other.mMat[2]) + (mMat[1] * other.mMat[6]) + 
+		(mMat[2] * other.mMat[10]) + (mMat[3] * other.mMat[14]);
+	temp.mMat[3] = (mMat[0] * other.mMat[3]) + (mMat[1] * other.mMat[7]) + 
+		(mMat[2] * other.mMat[11]) + (mMat[3] * other.mMat[15]);
+	temp.mMat[4] = (mMat[4] * other.mMat[0]) + (mMat[5] * other.mMat[4]) + 
+		(mMat[6] * other.mMat[8]) + (mMat[7] * other.mMat[12]);
+	temp.mMat[5] = (mMat[4] * other.mMat[1]) + (mMat[5] * other.mMat[5]) + 
+		(mMat[6] * other.mMat[9]) + (mMat[7] * other.mMat[13]);
+	temp.mMat[6] = (mMat[4] * other.mMat[2]) + (mMat[5] * other.mMat[6]) + 
+		(mMat[6] * other.mMat[10]) + (mMat[7] * other.mMat[14]);
+	temp.mMat[7] = (mMat[4] * other.mMat[3]) + (mMat[5] * other.mMat[7]) + 
+		(mMat[6] * other.mMat[11]) + (mMat[7] * other.mMat[15]);
+	temp.mMat[8] = (mMat[8] * other.mMat[0]) + (mMat[9] * other.mMat[4]) + 
+		(mMat[10] * other.mMat[8]) + (mMat[11] * other.mMat[12]);
+	temp.mMat[9] = (mMat[8] * other.mMat[1]) + (mMat[9] * other.mMat[5]) + 
+		(mMat[10] * other.mMat[9]) + (mMat[11] * other.mMat[13]);
+	temp.mMat[10] = (mMat[8] * other.mMat[2]) + (mMat[9] * other.mMat[6]) + 
+		(mMat[10] * other.mMat[10]) + (mMat[11] * other.mMat[14]);
+	temp.mMat[11] = (mMat[8] * other.mMat[3]) + (mMat[9] * other.mMat[7]) + 
+		(mMat[10] * other.mMat[11]) + (mMat[11] * other.mMat[15]);
+	temp.mMat[12] = (mMat[12] * other.mMat[0]) + (mMat[13] * other.mMat[4]) + 
+		(mMat[14] * other.mMat[8]) + (mMat[15] * other.mMat[12]);
+	temp.mMat[13] = (mMat[12] * other.mMat[1]) + (mMat[13] * other.mMat[5]) + 
+		(mMat[14] * other.mMat[9]) + (mMat[15] * other.mMat[13]);
+	temp.mMat[14] = (mMat[12] * other.mMat[2]) + (mMat[13] * other.mMat[6]) + 
+		(mMat[14] * other.mMat[10]) + (mMat[15] * other.mMat[14]);
+	temp.mMat[15] = (mMat[12] * other.mMat[3]) + (mMat[13] * other.mMat[7]) + 
+		(mMat[14] * other.mMat[11]) + (mMat[15] * other.mMat[15]);
 	return temp;
 }
 
@@ -98,11 +131,11 @@ istream& operator >> (istream& in, Matrix4 matrix)
 
 ostream& operator << (ostream &os, Matrix4 &matrix)
 {
-	os << matrix.mMat[0] << " " << matrix.mMat[1] << " " << matrix.mMat[2] << " " <<
-		matrix.mMat[3] << std::endl << matrix.mMat[4] << " " << matrix.mMat[5] << " " <<
-		matrix.mMat[6] << " " << matrix.mMat[7] << std::endl << matrix.mMat[8] << " " <<
-		matrix.mMat[9] << " " << matrix.mMat[10] << " " << matrix.mMat[11] << std::endl <<
-		matrix.mMat[12] << " " << matrix.mMat[13] << " " << matrix.mMat[14] << " " <<
-		matrix.mMat[15] << std::endl;
+	os << matrix.mMat[0] << "	" << matrix.mMat[1] << "	" << matrix.mMat[2] << "	"
+		<< matrix.mMat[3] << endl << matrix.mMat[4] << "	" << matrix.mMat[5] << "	" 
+		 << matrix.mMat[6] << "	" << matrix.mMat[7] << endl << matrix.mMat[8] << "	" <<
+		matrix.mMat[9] << "	" << matrix.mMat[10] << "	" << matrix.mMat[11] << endl <<
+		matrix.mMat[12] << "	" << matrix.mMat[13] << "	" << matrix.mMat[14] 
+		<< "	" << matrix.mMat[15] << endl;
 	return os;
 }
