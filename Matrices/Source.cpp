@@ -13,5 +13,5 @@ int main()
 	Matrix2 matrixFive = matrixFour.RotateX(90);
 	std::cout << matrixFive;
 	
-
+	system("pause");
 }
