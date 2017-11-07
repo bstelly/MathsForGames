@@ -52,35 +52,33 @@ Matrix2 Matrix2::operator* (Matrix2 & other)
 	return temp;
 }
 
-//Matrix2 Matrix2::operator* (Vector2& other)
-//{
-//
-//}
-
-Matrix2 Matrix2::RotateX(float angle)
+Vector2 Matrix2::operator* (Vector2& other)
 {
-	float cosineOfAngle = cos(angle);
-	float sineOfAngle = sin(angle);
-	float negativeSineOfAngle = -(sin(angle));
-	Matrix2 rotate(cosineOfAngle, negativeSineOfAngle, sineOfAngle, cosineOfAngle);
-	Matrix2 temp;
-	temp.mMat[0] = (mMat[0] * cosineOfAngle) + (mMat[1] * sineOfAngle);
-	temp.mMat[1] = (mMat[0] * negativeSineOfAngle) + (mMat[1] * cosineOfAngle);
-	temp.mMat[2] = (mMat[2] * cosineOfAngle) + (mMat[3] * sineOfAngle);
-	temp.mMat[3] = (mMat[2] * negativeSineOfAngle) + (mMat[3] * cosineOfAngle);
+	Vector2 temp;
+	temp.mX = (mMat[0] * other.mX) + (mMat[1] * other.mY);
+	temp.mY = (mMat[2] * other.mX) + (mMat[3] * other.mY);
 	return temp;
 }
 
-//void Matrix2::RotateY(float angle)
-//{
-//
-//}
-//
-//void Matrix2::RotateZ(float angle)
-//{
-//
-//}
+Matrix2 Matrix2::RotateX(float angle)
+{
+	angle = ((angle * 3.14) / 180);
+	Matrix2 rot(cos(angle), -sin(angle),
+				sin(angle), cos(angle));
+	Matrix2 temp(mMat[0], mMat[1], mMat[2], mMat[3]);
+	Matrix2 result = rot * temp;
+	return result;
+}
 
+Matrix2 Matrix2::RotateY(float angle)
+{
+	angle = ((angle * 3.14) / 180);
+	Matrix2 rot(cos(angle), sin(angle),
+		-sin(angle), cos(angle));
+	Matrix2 temp(mMat[0], mMat[1], mMat[2], mMat[3]);
+	Matrix2 result = rot * temp;
+	return result;
+}
 
 istream& operator >> (istream& in, Matrix2 matrix)
 {

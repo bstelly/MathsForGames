@@ -17,7 +17,7 @@ public:
 	Matrix3 RotateX(float angle);
 	Matrix3 RotateY(float angle);
 	Matrix3 RotateZ(float angle);
-	Matrix3 operator* (Vector3 & other);
+	Vector3 operator* (Vector3 & other);
 	friend ostream& operator<<(ostream& os, Matrix3& matrix);
 	friend istream& operator >> (istream &in, Matrix3 matrix);
 };

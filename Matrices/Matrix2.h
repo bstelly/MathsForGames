@@ -15,8 +15,7 @@ public:
 	Matrix2 operator * (Matrix2 & other);
 	Matrix2 RotateX(float angle);
 	Matrix2 RotateY(float angle);
-	Matrix2 RotateZ(float angle);
-	Matrix2 operator* (Vector2 & other);
+	Vector2 operator* (Vector2 & other);
 	friend ostream& operator<<(ostream& os, Matrix2& matrix);
 	friend istream& operator >> (istream &in, Matrix2 matrix);
 

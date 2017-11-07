@@ -19,7 +19,7 @@ public:
 	Matrix4 RotateX(float angle);
 	Matrix4 RotateY(float angle);
 	Matrix4 RotateZ(float angle);
-	Matrix4 operator* (Vector4 & other);
+	Vector4 operator* (Vector4 & other);
 	friend ostream& operator<<(ostream& os, Matrix4& matrix);
 	friend istream& operator >> (istream &in, Matrix4 matrix);
 };

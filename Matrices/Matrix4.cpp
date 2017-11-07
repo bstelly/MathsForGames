@@ -120,6 +120,65 @@ Matrix4 Matrix4::operator* (Matrix4 & other)
 	return temp;
 }
 
+Matrix4 Matrix4::RotateX(float angle)
+{
+	angle = ((angle * 3.14) / 180);
+	Matrix4 rot(1, 0, 0, 0,
+		0, cos(angle), -sin(angle), 0,
+		0, sin(angle), cos(angle), 0,
+		0, 0, 0, 1);
+	Matrix4 temp(mMat[0], mMat[1], mMat[2], mMat[3],
+		mMat[4], mMat[5], mMat[6], mMat[7],
+		mMat[8], mMat[9], mMat[10], mMat[11],
+		mMat[12], mMat[13], mMat[14], mMat[15]);
+	Matrix4 result = rot * temp;
+	return result;
+}
+
+Matrix4 Matrix4::RotateY(float angle)
+{
+	angle = ((angle * 3.14) / 180);
+	Matrix4 rot(cos(angle), 0, sin(angle), 0,
+		0, 1, 0, 0,
+		-sin(angle), 0, cos(angle), 0,
+		0, 0, 0, 1);
+	Matrix4 temp(mMat[0], mMat[1], mMat[2], mMat[3],
+		mMat[4], mMat[5], mMat[6], mMat[7],
+		mMat[8], mMat[9], mMat[10], mMat[11],
+		mMat[12], mMat[13], mMat[14], mMat[15]);
+	Matrix4 result = rot * temp;
+	return result;
+}
+
+Matrix4 Matrix4::RotateZ(float angle)
+{
+	angle = ((angle * 3.14) / 180);
+	Matrix4 rot(cos(angle), -sin(angle), 0, 0,
+		sin(angle), cos(angle), 0, 0,
+		0, 0, 1, 0,
+		0, 0, 0, 1);
+	Matrix4 temp(mMat[0], mMat[1], mMat[2], mMat[3],
+		mMat[4], mMat[5], mMat[6], mMat[7],
+		mMat[8], mMat[9], mMat[10], mMat[11],
+		mMat[12], mMat[13], mMat[14], mMat[15]);
+	Matrix4 result = rot * temp;
+	return result;
+}
+
+Vector4 Matrix4::operator*(Vector4 &other)
+{
+	Vector4 temp;
+	temp.mX = (mMat[0] * other.mX) + (mMat[1] * other.mY) + (mMat[2] * other.mZ) +
+			(mMat[3] * other.mW);
+	temp.mY = (mMat[4] * other.mX) + (mMat[5] * other.mY) + (mMat[6] * other.mZ) +
+		(mMat[7] * other.mW);
+	temp.mZ = (mMat[8] * other.mX) + (mMat[9] * other.mY) + (mMat[10] * other.mZ) +
+		(mMat[11] * other.mW);
+	temp.mW = (mMat[12] * other.mX) + (mMat[13] * other.mY) + (mMat[14] * other.mZ) +
+		(mMat[15] * other.mW);
+	return temp;
+}
+
 istream& operator >> (istream& in, Matrix4 matrix)
 {
 	in >> matrix.mMat[0] >> matrix.mMat[1] >> matrix.mMat[2] >> matrix.mMat[3]

@@ -1,4 +1,3 @@
-﻿  Source.cpp
-c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\source.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+﻿  Matrix3.cpp
   Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.exe
   Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.pdb (Partial PDB)

@@ -74,8 +74,54 @@ Matrix3 Matrix3::operator* (Matrix3 & other)
 		(mMat[8] * other.mMat[7]);
 	temp.mMat[8] = (mMat[6] * other.mMat[2]) + (mMat[7] * other.mMat[5]) + 
 		(mMat[8] * other.mMat[8]);
+	return temp;
+}
 
+Matrix3 Matrix3::RotateX(float angle)
+{
+	Matrix3 rot(
+		1, 0, 0,
+		0, cos(angle), -sin(angle),
+		0, sin(angle), cos(angle));
+	Matrix3 temp(mMat[0], mMat[1], mMat[2],
+		mMat[3], mMat[4], mMat[5],
+		mMat[6], mMat[7], mMat[8]);
+	Matrix3 result = rot * temp;
+	return result;
+}
 
+Matrix3 Matrix3::RotateY(float angle)
+{
+	Matrix3 rot(
+		cos(angle), 0, sin(angle),
+		0, 1, 0,
+		-sin(angle), 0, cos(angle));
+		Matrix3 temp(mMat[0], mMat[1], mMat[2],
+			mMat[3], mMat[4], mMat[5],
+			mMat[6], mMat[7], mMat[8]);
+	Matrix3 result = rot * temp;
+	return result;
+}
+
+Matrix3 Matrix3::RotateZ(float angle)
+{
+	Matrix3 rot(
+		cos(angle), -sin(angle), 0,
+		sin(angle), cos(angle), 0,
+		0, 0, 1);
+	Matrix3 temp(mMat[0], mMat[1], mMat[2],
+		mMat[3], mMat[4], mMat[5],
+		mMat[6], mMat[7], mMat[8]);
+	Matrix3 result = rot * temp;
+	return result;
+}
+
+Vector3 Matrix3::operator* (Vector3 &other)
+{
+	Vector3 temp;
+	temp.mX = (mMat[0] * other.mX) + (mMat[1] * other.mY) + (mMat[2] * other.mZ);
+	temp.mY = (mMat[3] * other.mX) + (mMat[4] * other.mY) + (mMat[5] * other.mZ);
+	temp.mZ = (mMat[6] * other.mX) + (mMat[7] * other.mY) + (mMat[8] * other.mZ);
 	return temp;
 }
 
@@ -91,6 +137,6 @@ ostream& operator << (ostream &os, Matrix3 &matrix)
 {
 	os << matrix.mMat[0] << "	" << matrix.mMat[1] << "	" << matrix.mMat[2] << endl
 		<< matrix.mMat[3] << "	" << matrix.mMat[4] << "	" << matrix.mMat[5] << endl
-		<< matrix.mMat[6] << "	" << matrix.mMat[7] << "	" << matrix.mMat[8];
+		<< matrix.mMat[6] << "	" << matrix.mMat[7] << "	" << matrix.mMat[8] << endl;
 	return os;
 }
