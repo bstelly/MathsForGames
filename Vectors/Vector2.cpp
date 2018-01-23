@@ -43,6 +43,10 @@ bool Vector2::operator==(Vector2 &other)
 	{
 		return true;
 	}
+	else
+	{
+		return false;
+	}
 }
 
 float Vector2::Dot(Vector2 &other)

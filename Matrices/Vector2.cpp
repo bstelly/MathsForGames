@@ -7,7 +7,7 @@ Vector2::Vector2()
 	mY = 0;
 }
 
-Vector2::Vector2(float x, float y)
+Vector2::Vector2(int x, int y)
 {
 	mX = x;
 	mY = y;
@@ -42,6 +42,10 @@ bool Vector2::operator==(Vector2 &other)
 	if (mX == other.mX && mY == other.mY)
 	{
 		return true;
+	}
+	else
+	{
+		return false;
 	}
 }
 

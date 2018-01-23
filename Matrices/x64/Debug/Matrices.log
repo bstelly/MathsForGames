@@ -1,0 +1,17 @@
+﻿  Vector4.cpp
+  Vector3.cpp
+  Vector2.cpp
+  Source.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\source.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Matrix4.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(140): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(155): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Matrix3.cpp
+  Matrix2.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(75): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(46): warning C4715: 'Vector2::operator==': not all control paths return a value
+  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\x64\Debug\Matrices.exe
+  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\x64\Debug\Matrices.pdb (Partial PDB)

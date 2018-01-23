@@ -12,7 +12,7 @@ int main()
 	Vector2 vector2TestOne = vector2One + vector2Two;
 	Vector2 resultOne(8, 8);
 	assert(vector2TestOne == resultOne);
-	
+
 	Vector2 vector2TestTwo = vector2One - vector2Two;
 	Vector2 resultTwo(2, 2);
 	assert(vector2TestTwo == resultTwo);
@@ -56,7 +56,7 @@ int main()
 		resultNine = true;
 	}
 	assert(resultNine == true);
-	
+
 	float resultTen = 98;
 	assert(resultTen == vector3One.Dot(vector3Two));
 
@@ -86,7 +86,15 @@ int main()
 
 	float resultFifteen = 70;
 	assert(resultFifteen == vector4One.Dot(vector4Two));
-	
+
+	Vector2 vecOne(500, 600);
+	Vector2 vecTwo(100, 200);
+	if (vecOne == vecTwo)
+	{
+		std::cout << "They are the same" << std::endl;
+	}
+
+
 	std::cout << vector4Three << std::endl;
 	std::cin >> vector4Three;
 	vector4Three;

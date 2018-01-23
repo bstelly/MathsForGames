@@ -1,0 +1,27 @@
+﻿  Matrix2.cpp
+Matrix2.cpp(58): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Matrix2.cpp(59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Matrix2.cpp(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Matrix2.cpp(75): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Matrix3.cpp
+  Matrix4.cpp
+Matrix4.cpp(125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Matrix4.cpp(140): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+Matrix4.cpp(155): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Source.cpp
+Source.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Vector2.cpp
+Vector2.cpp(35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Vector2.cpp(36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Vector2.cpp(55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+Vector2.cpp(61): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Vector2.cpp(62): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+Vector2.cpp(71): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+Vector2.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Vector3.cpp
+  Vector4.cpp
+  Generating code
+  All 24 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Release\Matrices.exe
+  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Release\Matrices.pdb (Full PDB)

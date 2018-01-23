@@ -44,7 +44,7 @@ Matrix2 Matrix2::operator - (Matrix2 & other)
 
 Matrix2 Matrix2::operator* (Matrix2 & other)
 {
-	Matrix2 temp;											
+	Matrix2 temp;
 	temp.mMat[0] = (mMat[0] * other.mMat[0]) + (mMat[1] * other.mMat[2]);
 	temp.mMat[1] = (mMat[0] * other.mMat[1]) + (mMat[1] * other.mMat[3]);
 	temp.mMat[2] = (mMat[2] * other.mMat[0]) + (mMat[3] * other.mMat[2]);

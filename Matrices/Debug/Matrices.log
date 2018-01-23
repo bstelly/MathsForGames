@@ -1,3 +1,24 @@
-﻿  Matrix3.cpp
-  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.exe
-  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.pdb (Partial PDB)
+﻿  Vector4.cpp
+  Vector3.cpp
+  Vector2.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(35): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(36): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(55): warning C4244: '=': conversion from 'int' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(61): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(62): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(71): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\vector2.cpp(72): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  Source.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\source.cpp(12): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Matrix4.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(125): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(140): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix4.cpp(155): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Matrix3.cpp
+  Matrix2.cpp
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(58): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(59): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(65): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+c:\users\s178022\documents\visual studio 2015\projects\mathforgames\matrices\matrix2.cpp(75): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Matrices.vcxproj -> C:\Users\s178022\Documents\Visual Studio 2015\Projects\MathForGames\Debug\Matrices.lib
